@@ -86,11 +86,11 @@ function ColorPicker() {
   }
 
   return (
-    <div className="max-w-6xl sm:mx-auto mt-6 mb-3 border-2 border-gray-400 mx-4">
-      <div style={{backgroundColor: color, backgroundImage: `url(${img})`, backgroundPosition: 'center', backgroundSize: 'cover'}} className="min-h-[30rem] w-full relative flex justify-center items-center px-4 py-4">
+    <div className="max-w-6xl sm:mx-auto mt-4 mb-3 border-2 border-gray-400 mx-4">
+      <div style={{backgroundColor: color, backgroundImage: `url(${img})`, backgroundPosition: 'center', backgroundSize: 'cover'}} className="min-h-[26rem] w-full relative flex justify-center items-center px-4 py-4">
         <div className="bg-[#0000006e] p-6 rounded-md max-w-xl text-white text-center">
-          <h1 className="text-3xl sm:text-4xl mb-2 font-medium">Dynamic Color & Background Customizer</h1>
-          <p>This versatile tool offers you the freedom to generate random HEX and RGB colors, select from predefined color options, or input your own custom color. Additionally, you can choose and set background images to enhance your design. Each selection updates instantly, providing a real-time preview of your choices!</p>
+          <h1 className="text-3xl sm:text-4xl mb-2 font-medium leading-snug sm:leading-normal">Dynamic Color & Background Customizer</h1>
+          <p className="leading-snug sm:leading-normal">The freedom to generate random HEX and RGB colors, select from predefined color options, or input your own custom color. Additionally, you can choose and set background images!</p>
         </div>
         {/* <p>{
             typeOfColor === 'hex' ? 'Hex color' :
@@ -129,15 +129,15 @@ function ColorPicker() {
 
         <div>
           {bgPic && <div className="flex items-center justify-center gap-4 py-4">
-              <div onClick={() => setBgPicture('https://images.pexels.com/photos/450062/pexels-photo-450062.jpeg')} style={{backgroundImage: `url('https://images.pexels.com/photos/450062/pexels-photo-450062.jpeg')`, backgroundSize: 'cover'}} className="h-10 w-10"></div>
+              <div onClick={() => setBgPicture('https://images.pexels.com/photos/450062/pexels-photo-450062.jpeg')} style={{backgroundImage: `url('https://images.pexels.com/photos/450062/pexels-photo-450062.jpeg')`, backgroundSize: 'cover'}} className="h-8 w-8"></div>
 
-              <div onClick={() => setBgPicture('https://images.pexels.com/photos/3635300/pexels-photo-3635300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')} style={{backgroundImage: `url('https://images.pexels.com/photos/3635300/pexels-photo-3635300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`, backgroundSize: 'cover'}} className="h-10 w-10"></div>
+              <div onClick={() => setBgPicture('https://images.pexels.com/photos/3635300/pexels-photo-3635300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')} style={{backgroundImage: `url('https://images.pexels.com/photos/3635300/pexels-photo-3635300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`, backgroundSize: 'cover'}} className="h-8 w-8"></div>
 
-              <div onClick={() => setBgPicture('https://images.pexels.com/photos/4316213/pexels-photo-4316213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')} style={{backgroundImage: `url('https://images.pexels.com/photos/4316213/pexels-photo-4316213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`, backgroundSize: 'cover'}} className="h-10 w-10"></div>
+              <div onClick={() => setBgPicture('https://images.pexels.com/photos/4316213/pexels-photo-4316213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')} style={{backgroundImage: `url('https://images.pexels.com/photos/4316213/pexels-photo-4316213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`, backgroundSize: 'cover'}} className="h-8 w-8"></div>
 
-              <div onClick={() => setBgPicture('https://images.pexels.com/photos/6613570/pexels-photo-6613570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')} style={{backgroundImage: `url('https://images.pexels.com/photos/6613570/pexels-photo-6613570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`, backgroundSize: 'cover'}} className="h-10 w-10"></div>
+              <div onClick={() => setBgPicture('https://images.pexels.com/photos/6613570/pexels-photo-6613570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')} style={{backgroundImage: `url('https://images.pexels.com/photos/6613570/pexels-photo-6613570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`, backgroundSize: 'cover'}} className="h-8 w-8"></div>
 
-              <div onClick={() => setBgPicture('https://images.pexels.com/photos/4096311/pexels-photo-4096311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')} style={{backgroundImage: `url('https://images.pexels.com/photos/4096311/pexels-photo-4096311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`, backgroundSize: 'cover'}} className="h-10 w-10"></div>
+              <div onClick={() => setBgPicture('https://images.pexels.com/photos/4096311/pexels-photo-4096311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')} style={{backgroundImage: `url('https://images.pexels.com/photos/4096311/pexels-photo-4096311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`, backgroundSize: 'cover'}} className="h-8 w-8"></div>
             </div>}
         </div>
       </div>
